@@ -60,4 +60,13 @@ if [ -z "${ips}" ]; then
     ips=`python -c 'import socket; print socket.gethostbyname(socket.gethostname())'` 2> /dev/null
 fi
  
-echo -n '{"hostname": "'$hostname'", "distro": "'$distro'", "uptime": "'$uptime'", "cpus": '$cpus', "loadavg": "'$loadavg'", "memory": '$memory', "ips": "'$ips'"}'
+echo -n '{"hostname": 
+"'$hostname'", 
+"distro": 
+"'$distro'", 
+"uptime": 
+"'$uptime'",
+"cpus": '$cpus', 
+"loadavg": "'$loadavg'", 
+"memory": '$memory', 
+"ips": "'$ips'"}'
